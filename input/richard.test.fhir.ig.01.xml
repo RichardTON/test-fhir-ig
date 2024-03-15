@@ -51,14 +51,14 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Rob's Test FHIR Implementation Guide Home Page"/>
+        <title value="Richard's Test FHIR Implementation Guide Home Page"/>
         <generation value="html"/>
       </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
-      <value value="2022+"/>
+      <value value="2024+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
@@ -117,10 +117,6 @@
     <parameter>
       <code value="logging"/>
       <value value="html"/>
-    </parameter>
-    <parameter>
-      <code value="showsource"/>
-      <value value="true"/>
     </parameter>
   </definition>
 </ImplementationGuide>
