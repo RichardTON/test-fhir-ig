@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+  xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="richard.test.fhir.ig.01"/>
   <url value="https://github.com/RichardTON/fhir/ig/ImplementationGuide/richard.test.fhir.ig.01"/>
   <version value="0.0.1"/>
@@ -34,6 +34,11 @@
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="aubaser4">
+		<uri value="http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"/>
+		<packageId value="hl7.fhir.au.base"/>
+		<version value="current"/>
+	</dependsOn>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
