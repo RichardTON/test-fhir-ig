@@ -3,13 +3,21 @@
     <meta>
       <versionId value="2"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+      <tag>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+        <code value="SUBSETTED"/>
+      </tag>
     </meta>
     <url value="https://github.com/RichardTON/fhir/ig/ValueSet/common-languages-australia-RTO"/>
+    <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.36.1.2001.1004.201.10069"/>
+    </identifier>
     <version value="2.2.1"/>
     <name value="CommonLanguagesInAustraliaRTO"/>
     <title value="Common Languages in Australia - RTO"/>
     <status value="active"/>
-    <experimental value="false"/>
+    <experimental value="true"/>
     <publisher value="RTO"/>
     <contact>
       <telecom>
@@ -21,17 +29,42 @@
     <copyright value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource also includes all or a portion of material that is HL7 FHIR Copyright © 2011+ HL7 licensed under Creative Commons 'No Rights Reserved' (CC0)  &#xa;&#xa;&#x9;Copyright (c) 2008 IETF Trust and the persons identified as the document authors (https://tools.ietf.org/html/bcp47). All rights reserved.  &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
     <compose>
       <include>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2"/>
-      </include>
-      <exclude>
         <system value="urn:ietf:bcp:47"/>
         <concept>
-          <code value="en-AU"/>
+          <code value="ace"/>
+          <display value="Achinese"/>
         </concept>
         <concept>
-          <code value="en-NZ"/>
+          <code value="ach"/>
+          <display value="Acholi"/>
         </concept>
-      </exclude>
+        <concept>
+          <code value="aa"/>
+          <display value="Afar"/>
+        </concept>
+
+        <!-- SNIP -->
+
+        <concept>
+          <code value="wgg"/>
+          <display value="Wangkangurru"/>
+        </concept>
+        <concept>
+          <code value="wgy"/>
+          <display value="Wargamay"/>
+        </concept>
+        <concept>
+          <code value="weg"/>
+          <display value="Wergaia"/>
+        </concept>
+        <concept>
+          <code value="yub"/>
+          <display value="Yugambal"/>
+        </concept>
+      </include>
+      <include>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+      </include>
     </compose>
   </ValueSet>
   
